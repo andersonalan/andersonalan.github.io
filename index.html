@@ -1,11 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Anderson Alan</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anderson Alan Farias — Software Developer</title>
+  <meta name="description" content="Portfolio of Anderson Alan Farias, software developer. Projects, experience and contact." />
+  <meta property="og:title" content="Anderson Alan Farias — Software Developer" />
+  <meta property="og:description" content="Projects, experience and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://andersonalan.github.io/" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/84734299?v=4" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          maxWidth: {
+            content: '48rem',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
 </head>
-<body>
-    <h1>Hello world!</h1>
+<body class="bg-white text-neutral-900 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex h-14 max-w-content items-center justify-between px-6" aria-label="Main navigation">
+      <a href="#top" class="text-sm font-semibold tracking-tight">andersonalan<span class="text-neutral-400">.dev</span></a>
+      <div class="hidden items-center gap-6 text-sm text-neutral-600 sm:flex">
+        <a href="#about" class="hover:text-black">About</a>
+        <a href="#experience" class="hover:text-black">Experience</a>
+        <a href="#projects" class="hover:text-black">Projects</a>
+        <a href="#contact" class="hover:text-black">Contact</a>
+        <a href="https://github.com/andersonalan" target="_blank" rel="noopener"
+           class="rounded-full border border-neutral-300 px-3 py-1 text-neutral-900 hover:border-black">GitHub ↗</a>
+      </div>
+      <button id="menu-btn" class="sm:hidden p-2" aria-label="Open menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-neutral-200 px-6 py-3 sm:hidden">
+      <div class="flex flex-col gap-3 text-sm">
+        <a href="#about" class="py-1">About</a>
+        <a href="#experience" class="py-1">Experience</a>
+        <a href="#projects" class="py-1">Projects</a>
+        <a href="#contact" class="py-1">Contact</a>
+        <a href="https://github.com/andersonalan" target="_blank" rel="noopener" class="py-1">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-content px-6">
+
+    <!-- Hero -->
+    <section class="flex flex-col gap-6 py-16 sm:py-24">
+      <img src="https://avatars.githubusercontent.com/u/84734299?v=4"
+           alt="Anderson Alan Farias"
+           class="h-16 w-16 rounded-full border border-neutral-200"
+           width="64" height="64" />
+      <div>
+        <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Anderson Alan Farias</h1>
+        <p class="mt-2 text-lg text-neutral-600">Software Developer</p>
+      </div>
+      <p class="max-w-xl leading-relaxed text-neutral-700">
+        I build simple, reliable software. I work with
+        <span class="font-medium text-black">Java, TypeScript and Python</span>,
+        focusing on clean code and practical solutions.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#projects" class="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-neutral-800">View projects</a>
+        <a href="#contact" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black">Get in touch</a>
+      </div>
+      <div class="flex gap-4 text-sm text-neutral-500">
+        <a href="https://github.com/andersonalan" target="_blank" rel="noopener" class="hover:text-black">GitHub</a>
+        <a href="https://www.linkedin.com/in/anderson-alanfarias" target="_blank" rel="noopener" class="hover:text-black">LinkedIn</a>
+        <!-- TODO: replace with your real email + LinkedIn URL -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-t border-neutral-200 py-12">
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">About</h2>
+      <!-- EDIT: rewrite this bio in your own words -->
+      <p class="mt-4 leading-relaxed text-neutral-700">
+        I'm Anderson, a developer based in Brazil. I enjoy building small tools,
+        web apps and backend services, and learning by shipping real projects.
+        My recent work includes a YouTube downloader in Python, a Todo app in
+        TypeScript, and an image management app in Java.
+      </p>
+      <div class="mt-6">
+        <h3 class="text-sm font-semibold">Skills</h3>
+        <ul class="mt-3 flex flex-wrap gap-2 text-sm">
+          <li class="rounded-full bg-neutral-100 px-3 py-1">Java</li>
+          <li class="rounded-full bg-neutral-100 px-3 py-1">TypeScript</li>
+          <li class="rounded-full bg-neutral-100 px-3 py-1">Python</li>
+          <li class="rounded-full bg-neutral-100 px-3 py-1">HTML / CSS</li>
+          <li class="rounded-full bg-neutral-100 px-3 py-1">Git &amp; GitHub</li>
+          <li class="rounded-full bg-neutral-100 px-3 py-1">REST APIs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="border-t border-neutral-200 py-12">
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">Experience</h2>
+      <div class="mt-6 space-y-8">
+        <!-- EDIT: replace these placeholders with your real jobs / education -->
+        <article class="grid gap-1 sm:grid-cols-[140px_1fr] sm:gap-6">
+          <p class="text-sm text-neutral-500">2024 — Present</p>
+          <div>
+            <h3 class="font-semibold">Software Developer — Personal Projects</h3>
+            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+              Building and maintaining open-source projects: CLI tools, web apps and
+              study projects focused on Java, TypeScript and Python.
+            </p>
+          </div>
+        </article>
+        <article class="grid gap-1 sm:grid-cols-[140px_1fr] sm:gap-6">
+          <p class="text-sm text-neutral-500">2021 — Present</p>
+          <div>
+            <h3 class="font-semibold">Continuous Learning</h3>
+            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+              Active on GitHub since 2021. Studying software engineering fundamentals,
+              data structures, and modern web development.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="border-t border-neutral-200 py-12">
+      <div class="flex items-baseline justify-between">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">Projects</h2>
+        <a href="https://github.com/andersonalan?tab=repositories" target="_blank" rel="noopener" class="text-sm text-neutral-500 hover:text-black">All repos ↗</a>
+      </div>
+
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        <!-- Project 1 -->
+        <article class="flex flex-col rounded-xl border border-neutral-200 p-5 transition hover:border-neutral-400 hover:shadow-sm">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold">ytb-download</h3>
+            <span class="text-xs text-neutral-500">Python</span>
+          </div>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">
+            Lightweight YouTube downloader. Download videos with a simple, scriptable interface.
+          </p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="https://github.com/andersonalan/ytb-download" target="_blank" rel="noopener" class="font-medium hover:underline">Code ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="flex flex-col rounded-xl border border-neutral-200 p-5 transition hover:border-neutral-400 hover:shadow-sm">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold">todo-app</h3>
+            <span class="text-xs text-neutral-500">TypeScript</span>
+          </div>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">
+            Task manager built with TypeScript. Create, complete and organize daily tasks.
+          </p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="https://github.com/andersonalan/todo-app" target="_blank" rel="noopener" class="font-medium hover:underline">Code ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="flex flex-col rounded-xl border border-neutral-200 p-5 transition hover:border-neutral-400 hover:shadow-sm">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold">imagelite</h3>
+            <span class="text-xs text-neutral-500">Java</span>
+          </div>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">
+            Image management application in Java. Upload, organize and browse images.
+          </p>
+          <div class="mt-4 flex gap-3 text-sm">
+            <a href="https://github.com/andersonalan/imagelite" target="_blank" rel="noopener" class="font-medium hover:underline">Code ↗</a>
+          </div>
+        </article>
+
+        <!-- Placeholder for next project -->
+        <article class="flex flex-col justify-center rounded-xl border border-dashed border-neutral-300 p-5 text-sm text-neutral-500">
+          <p class="font-medium text-neutral-700">Your next project here</p>
+          <p class="mt-1">Add a new card in <code class="rounded bg-neutral-100 px-1">index.html</code> → #projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-neutral-200 py-12">
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">Contact</h2>
+      <p class="mt-4 text-xl font-medium tracking-tight sm:text-2xl">Let's work together.</p>
+      <p class="mt-2 text-neutral-600">Open to opportunities, freelance and collaboration.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <!-- TODO: replace your-email@example.com with your real email -->
+        <a href="mailto:your-email@example.com" class="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-neutral-800">Email me</a>
+        <a href="https://github.com/andersonalan" target="_blank" rel="noopener" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black">GitHub</a>
+        <a href="https://www.linkedin.com/in/anderson-alanfarias" target="_blank" rel="noopener" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-200">
+    <div class="mx-auto flex max-w-content items-center justify-between px-6 py-6 text-sm text-neutral-500">
+      <p>© <span id="year">2026</span> Anderson Alan Farias</p>
+      <a href="#top" class="hover:text-black">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
