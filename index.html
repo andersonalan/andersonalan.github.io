@@ -38,23 +38,33 @@
     <nav class="mx-auto flex h-14 max-w-content items-center justify-between px-6" aria-label="Main navigation">
       <a href="#top" class="text-sm font-semibold tracking-tight">andersonalan<span class="text-neutral-400">.dev</span></a>
       <div class="hidden items-center gap-6 text-sm text-neutral-600 sm:flex">
-        <a href="#about" class="hover:text-black">About</a>
-        <a href="#experience" class="hover:text-black">Experience</a>
-        <a href="#projects" class="hover:text-black">Projects</a>
-        <a href="#contact" class="hover:text-black">Contact</a>
+        <a href="#about" class="hover:text-black" data-i18n="nav-about">About</a>
+        <a href="#experience" class="hover:text-black" data-i18n="nav-experience">Experience</a>
+        <a href="#projects" class="hover:text-black" data-i18n="nav-projects">Projects</a>
+        <a href="#contact" class="hover:text-black" data-i18n="nav-contact">Contact</a>
         <a href="https://github.com/andersonalan" target="_blank" rel="noopener"
            class="rounded-full border border-neutral-300 px-3 py-1 text-neutral-900 hover:border-black">GitHub ↗</a>
+        <div class="flex items-center overflow-hidden rounded-full border border-neutral-300 text-xs font-medium" role="group" aria-label="Language">
+          <button data-lang-btn="en" class="bg-black px-3 py-1 text-white">EN</button>
+          <button data-lang-btn="pt" class="px-3 py-1 text-neutral-500 hover:text-black">PT</button>
+        </div>
       </div>
-      <button id="menu-btn" class="sm:hidden p-2" aria-label="Open menu" aria-expanded="false">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
+      <div class="flex items-center gap-2 sm:hidden">
+        <div class="flex items-center overflow-hidden rounded-full border border-neutral-300 text-xs font-medium" role="group" aria-label="Language">
+          <button data-lang-btn="en" class="bg-black px-3 py-1 text-white">EN</button>
+          <button data-lang-btn="pt" class="px-3 py-1 text-neutral-500 hover:text-black">PT</button>
+        </div>
+        <button id="menu-btn" class="p-2" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
     </nav>
     <div id="mobile-menu" class="hidden border-t border-neutral-200 px-6 py-3 sm:hidden">
       <div class="flex flex-col gap-3 text-sm">
-        <a href="#about" class="py-1">About</a>
-        <a href="#experience" class="py-1">Experience</a>
-        <a href="#projects" class="py-1">Projects</a>
-        <a href="#contact" class="py-1">Contact</a>
+        <a href="#about" class="py-1" data-i18n="nav-about">About</a>
+        <a href="#experience" class="py-1" data-i18n="nav-experience">Experience</a>
+        <a href="#projects" class="py-1" data-i18n="nav-projects">Projects</a>
+        <a href="#contact" class="py-1" data-i18n="nav-contact">Contact</a>
         <a href="https://github.com/andersonalan" target="_blank" rel="noopener" class="py-1">GitHub ↗</a>
       </div>
     </div>
@@ -70,16 +80,16 @@
            width="64" height="64" />
       <div>
         <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Anderson Alan Farias</h1>
-        <p class="mt-2 text-lg text-neutral-600">Software Developer</p>
+        <p class="mt-2 text-lg text-neutral-600" data-i18n="hero-role">Software Developer</p>
       </div>
-      <p class="max-w-xl leading-relaxed text-neutral-700">
+      <p class="max-w-xl leading-relaxed text-neutral-700" data-i18n="hero-desc">
         I build simple, reliable software. I work with
         <span class="font-medium text-black">Java, TypeScript and Python</span>,
         focusing on clean code and practical solutions.
       </p>
       <div class="flex flex-wrap gap-3">
-        <a href="#projects" class="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-neutral-800">View projects</a>
-        <a href="#contact" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black">Get in touch</a>
+        <a href="#projects" class="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-neutral-800" data-i18n="hero-cta-projects">View projects</a>
+        <a href="#contact" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black" data-i18n="hero-cta-contact">Get in touch</a>
       </div>
       <div class="flex gap-4 text-sm text-neutral-500">
         <a href="https://github.com/andersonalan" target="_blank" rel="noopener" class="hover:text-black">GitHub</a>
@@ -90,16 +100,16 @@
 
     <!-- About -->
     <section id="about" class="border-t border-neutral-200 py-12">
-      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">About</h2>
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500" data-i18n="about-title">About</h2>
       <!-- EDIT: rewrite this bio in your own words -->
-      <p class="mt-4 leading-relaxed text-neutral-700">
+      <p class="mt-4 leading-relaxed text-neutral-700" data-i18n="about-bio">
         I'm Anderson, a developer based in Brazil. I enjoy building small tools,
         web apps and backend services, and learning by shipping real projects.
         My recent work includes a YouTube downloader in Python and a Todo app in
         TypeScript.
       </p>
       <div class="mt-6">
-        <h3 class="text-sm font-semibold">Skills</h3>
+        <h3 class="text-sm font-semibold" data-i18n="skills-title">Skills</h3>
         <ul class="mt-3 flex flex-wrap gap-2 text-sm">
           <li class="rounded-full bg-neutral-100 px-3 py-1">Java</li>
           <li class="rounded-full bg-neutral-100 px-3 py-1">TypeScript</li>
@@ -113,14 +123,14 @@
 
     <!-- Experience -->
     <section id="experience" class="border-t border-neutral-200 py-12">
-      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">Experience</h2>
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500" data-i18n="exp-title">Experience</h2>
       <div class="mt-6 space-y-8">
         <!-- EDIT: replace these placeholders with your real jobs / education -->
         <article class="grid gap-1 sm:grid-cols-[140px_1fr] sm:gap-6">
           <p class="text-sm text-neutral-500">2024 — Present</p>
           <div>
-            <h3 class="font-semibold">Software Developer — Personal Projects</h3>
-            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+            <h3 class="font-semibold" data-i18n="exp1-title">Software Developer — Personal Projects</h3>
+            <p class="mt-1 text-sm leading-relaxed text-neutral-600" data-i18n="exp1-desc">
               Building and maintaining open-source projects: CLI tools, web apps and
               study projects focused on Java, TypeScript and Python.
             </p>
@@ -129,8 +139,8 @@
         <article class="grid gap-1 sm:grid-cols-[140px_1fr] sm:gap-6">
           <p class="text-sm text-neutral-500">2021 — Present</p>
           <div>
-            <h3 class="font-semibold">Continuous Learning</h3>
-            <p class="mt-1 text-sm leading-relaxed text-neutral-600">
+            <h3 class="font-semibold" data-i18n="exp2-title">Continuous Learning</h3>
+            <p class="mt-1 text-sm leading-relaxed text-neutral-600" data-i18n="exp2-desc">
               Active on GitHub since 2021. Studying software engineering fundamentals,
               data structures, and modern web development.
             </p>
@@ -142,8 +152,8 @@
     <!-- Projects -->
     <section id="projects" class="border-t border-neutral-200 py-12">
       <div class="flex items-baseline justify-between">
-        <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">Projects</h2>
-        <a href="https://github.com/andersonalan?tab=repositories" target="_blank" rel="noopener" class="text-sm text-neutral-500 hover:text-black">All repos ↗</a>
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500" data-i18n="proj-title">Projects</h2>
+        <a href="https://github.com/andersonalan?tab=repositories" target="_blank" rel="noopener" class="text-sm text-neutral-500 hover:text-black" data-i18n="proj-all">All repos ↗</a>
       </div>
 
       <div class="mt-6 grid gap-4 sm:grid-cols-2">
@@ -153,11 +163,11 @@
             <h3 class="font-semibold">ytb-download</h3>
             <span class="text-xs text-neutral-500">Python</span>
           </div>
-          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600" data-i18n="proj1-desc">
             Lightweight YouTube downloader. Download videos with a simple, scriptable interface.
           </p>
           <div class="mt-4 flex gap-3 text-sm">
-            <a href="https://github.com/andersonalan/ytb-download" target="_blank" rel="noopener" class="font-medium hover:underline">Code ↗</a>
+            <a href="https://github.com/andersonalan/ytb-download" target="_blank" rel="noopener" class="font-medium hover:underline" data-i18n="code-label">Code ↗</a>
           </div>
         </article>
 
@@ -167,30 +177,30 @@
             <h3 class="font-semibold">todo-app</h3>
             <span class="text-xs text-neutral-500">TypeScript</span>
           </div>
-          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600">
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-neutral-600" data-i18n="proj2-desc">
             Task manager built with TypeScript. Create, complete and organize daily tasks.
           </p>
           <div class="mt-4 flex gap-3 text-sm">
-            <a href="https://github.com/andersonalan/todo-app" target="_blank" rel="noopener" class="font-medium hover:underline">Code ↗</a>
+            <a href="https://github.com/andersonalan/todo-app" target="_blank" rel="noopener" class="font-medium hover:underline" data-i18n="code-label">Code ↗</a>
           </div>
         </article>
 
         <!-- Placeholder for next project -->
         <article class="flex flex-col justify-center rounded-xl border border-dashed border-neutral-300 p-5 text-sm text-neutral-500">
-          <p class="font-medium text-neutral-700">Your next project here</p>
-          <p class="mt-1">Add a new card in <code class="rounded bg-neutral-100 px-1">index.html</code> → #projects.</p>
+          <p class="font-medium text-neutral-700" data-i18n="proj-next-title">Your next project here</p>
+          <p class="mt-1" data-i18n="proj-next-desc">Add a new card in index.html → #projects.</p>
         </article>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="border-t border-neutral-200 py-12">
-      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500">Contact</h2>
-      <p class="mt-4 text-xl font-medium tracking-tight sm:text-2xl">Let's work together.</p>
-      <p class="mt-2 text-neutral-600">Open to opportunities, freelance and collaboration.</p>
+      <h2 class="text-xs font-semibold uppercase tracking-widest text-neutral-500" data-i18n="contact-title">Contact</h2>
+      <p class="mt-4 text-xl font-medium tracking-tight sm:text-2xl" data-i18n="contact-headline">Let's work together.</p>
+      <p class="mt-2 text-neutral-600" data-i18n="contact-sub">Open to opportunities, freelance and collaboration.</p>
       <div class="mt-6 flex flex-wrap gap-3">
         <!-- TODO: replace your-email@example.com with your real email -->
-        <a href="mailto:your-email@example.com" class="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-neutral-800">Email me</a>
+        <a href="mailto:your-email@example.com" class="rounded-full bg-black px-5 py-2 text-sm font-medium text-white hover:bg-neutral-800" data-i18n="contact-email">Email me</a>
         <a href="https://github.com/andersonalan" target="_blank" rel="noopener" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black">GitHub</a>
         <a href="https://www.linkedin.com/in/anderson-alanfarias" target="_blank" rel="noopener" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium hover:border-black">LinkedIn</a>
       </div>
@@ -200,7 +210,7 @@
   <footer class="border-t border-neutral-200">
     <div class="mx-auto flex max-w-content items-center justify-between px-6 py-6 text-sm text-neutral-500">
       <p>© <span id="year">2026</span> Anderson Alan Farias</p>
-      <a href="#top" class="hover:text-black">Back to top ↑</a>
+      <a href="#top" class="hover:text-black" data-i18n="footer-top">Back to top ↑</a>
     </div>
   </footer>
 
@@ -215,6 +225,96 @@
     menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
     // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // i18n EN/PT
+    const translations = {
+      en: {
+        'nav-about': 'About',
+        'nav-experience': 'Experience',
+        'nav-projects': 'Projects',
+        'nav-contact': 'Contact',
+        'hero-role': 'Software Developer',
+        'hero-desc': 'I build simple, reliable software. I work with <span class="font-medium text-black">Java, TypeScript and Python</span>, focusing on clean code and practical solutions.',
+        'hero-cta-projects': 'View projects',
+        'hero-cta-contact': 'Get in touch',
+        'about-title': 'About',
+        'about-bio': "I'm Anderson, a developer based in Brazil. I enjoy building small tools, web apps and backend services, and learning by shipping real projects. My recent work includes a YouTube downloader in Python and a Todo app in TypeScript.",
+        'skills-title': 'Skills',
+        'exp-title': 'Experience',
+        'exp1-title': 'Software Developer — Personal Projects',
+        'exp1-desc': 'Building and maintaining open-source projects: CLI tools, web apps and study projects focused on Java, TypeScript and Python.',
+        'exp2-title': 'Continuous Learning',
+        'exp2-desc': 'Active on GitHub since 2021. Studying software engineering fundamentals, data structures, and modern web development.',
+        'proj-title': 'Projects',
+        'proj-all': 'All repos ↗',
+        'proj1-desc': 'Lightweight YouTube downloader. Download videos with a simple, scriptable interface.',
+        'proj2-desc': 'Task manager built with TypeScript. Create, complete and organize daily tasks.',
+        'proj-next-title': 'Your next project here',
+        'proj-next-desc': 'Add a new card in index.html → #projects.',
+        'code-label': 'Code ↗',
+        'contact-title': 'Contact',
+        'contact-headline': "Let's work together.",
+        'contact-sub': 'Open to opportunities, freelance and collaboration.',
+        'contact-email': 'Email me',
+        'footer-top': 'Back to top ↑'
+      },
+      pt: {
+        'nav-about': 'Sobre',
+        'nav-experience': 'Experiência',
+        'nav-projects': 'Projetos',
+        'nav-contact': 'Contato',
+        'hero-role': 'Desenvolvedor de Software',
+        'hero-desc': 'Crio softwares simples e confiáveis. Trabalho com <span class="font-medium text-black">Java, TypeScript e Python</span>, com foco em código limpo e soluções práticas.',
+        'hero-cta-projects': 'Ver projetos',
+        'hero-cta-contact': 'Entrar em contato',
+        'about-title': 'Sobre',
+        'about-bio': 'Sou o Anderson, desenvolvedor no Brasil. Gosto de criar pequenas ferramentas, apps web e serviços backend, aprendendo na prática com projetos reais. Meus trabalhos recentes incluem um baixador de YouTube em Python e um app de tarefas em TypeScript.',
+        'skills-title': 'Habilidades',
+        'exp-title': 'Experiência',
+        'exp1-title': 'Desenvolvedor de Software — Projetos Pessoais',
+        'exp1-desc': 'Criação e manutenção de projetos open-source: ferramentas CLI, apps web e projetos de estudo com foco em Java, TypeScript e Python.',
+        'exp2-title': 'Aprendizado Contínuo',
+        'exp2-desc': 'Ativo no GitHub desde 2021. Estudando fundamentos de engenharia de software, estruturas de dados e desenvolvimento web moderno.',
+        'proj-title': 'Projetos',
+        'proj-all': 'Todos os repos ↗',
+        'proj1-desc': 'Baixador leve de vídeos do YouTube. Baixe vídeos com uma interface simples e automatizável.',
+        'proj2-desc': 'Gerenciador de tarefas feito em TypeScript. Crie, conclua e organize tarefas do dia a dia.',
+        'proj-next-title': 'Seu próximo projeto aqui',
+        'proj-next-desc': 'Adicione um novo card em index.html → #projects.',
+        'code-label': 'Código ↗',
+        'contact-title': 'Contato',
+        'contact-headline': 'Vamos trabalhar juntos.',
+        'contact-sub': 'Aberto a oportunidades, freelance e colaborações.',
+        'contact-email': 'Me envie um email',
+        'footer-top': 'Voltar ao topo ↑'
+      }
+    };
+    const titles = {
+      en: 'Anderson Alan Farias — Software Developer',
+      pt: 'Anderson Alan Farias — Desenvolvedor de Software'
+    };
+    function setLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) el.innerHTML = translations[lang][key];
+      });
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+      document.title = titles[lang];
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+      document.querySelectorAll('[data-lang-btn]').forEach(b => {
+        const active = b.getAttribute('data-lang-btn') === lang;
+        b.className = active
+          ? 'bg-black px-3 py-1 text-white'
+          : 'px-3 py-1 text-neutral-500 hover:text-black';
+      });
+    }
+    document.querySelectorAll('[data-lang-btn]').forEach(b => {
+      b.addEventListener('click', () => setLang(b.getAttribute('data-lang-btn')));
+    });
+    try {
+      const saved = localStorage.getItem('lang');
+      if (saved === 'pt' || saved === 'en') setLang(saved);
+    } catch (e) {}
   </script>
 </body>
 </html>
